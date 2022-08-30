@@ -1,4 +1,3 @@
-№№ Ьфкл Зкшиндтщм
 ## Mark Pribylnov
 
 ### Contact  
