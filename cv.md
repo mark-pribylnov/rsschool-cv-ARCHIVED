@@ -1,4 +1,3 @@
-
 ## Mark Pribylnov
 
 ### Contact  
@@ -21,3 +20,24 @@ Eventually, I decided to become a software engineer for a number of reasons:
 - Remote work
 - Huge supportive community
 - It's a challenge. My previous job was outbound sales. One of the most stressful jobs. Requires constant self-education. I got 50 to 100 rejections every day and had to convert them into sales. So, if I worked there, I can become a software engineer as well.
+
+### Skills  
+- HTML
+- CSS
+- JavaScript and Python (both on a basic level)
+- Git
+- VS Code
+- Linux
+
+### Code sample  
+Description:
+*Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.*  
+```
+function sum (numbers) {
+    let total = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        total += numbers[i];
+      };
+    return total;
+};
+```
