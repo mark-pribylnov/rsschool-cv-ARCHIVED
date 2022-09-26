@@ -1,0 +1,50 @@
+html {
+  font-size: 62.5%; /* = 10px if default font size is = 16px. Now we can easily use relative units "rem" and "em".*/
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.nav-list {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.5rem;
+  list-style-type: none;
+  padding: 3rem;
+  background-color: #829985;
+  font-weight: 300;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+.nav-link-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -0.5rem;
+  left: 0;
+  background-color: #ffffff;
+  transition: transform 0.3s;
+  transform-origin: bottom right;
+}
+
+.nav-link-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
