@@ -11,13 +11,23 @@ body {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.border {
+  border-bottom: 1px #000000 solid;
+}
+
+.normal-font {
+  font-size: 1.8em;
+}
 
 .nav-list {
   margin: 0;
   display: flex;
   justify-content: flex-end;
   gap: 2.5rem;
-  list-style-type: none;
   padding: 3rem;
   background-color: #829985;
   font-weight: 300;
@@ -31,12 +41,12 @@ body {
   font-size: 2em;
 }
 
-.nav-link-underline:after {
+.link-underline::after {
   content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 0.2rem;
   bottom: -0.5rem;
   left: 0;
   background-color: #ffffff;
@@ -44,7 +54,200 @@ body {
   transform-origin: bottom right;
 }
 
-.nav-link-underline:hover:after {
+.link-underline:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.photo {
+  display: block;
+  width: 20rem;
+  /* border-radius: 50%; */
+}
+
+.main-heading {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.name {
+  font-size: 3em;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  margin-bottom: 6rem;
+}
+
+.name::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin-top: 3rem;
+  left: 42.5%;
+  width: 15%;
+  height: 0.2rem;
+  background-color: #829985;
+}
+
+.main-heading > p {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+}
+
+hr {
+  height: 1.5rem;
+  background-color: #D7D1C9;
+  width: 97%;
+  border: none;
+}
+
+.section-title {
+  font-size: 1.1em;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #829985
+}
+
+.section-item {
+  line-height: 1.7;
+  position: relative;
+}
+
+.section-item:not(.contact-item)::before {
+  content: '';
+  width: 1.4rem;
+  height: 1.4rem;
+  position: absolute;
+  top: 0.8rem;
+  left: -2rem;
+  background-size: 1.4rem 1.4rem;
+  background-image: url("assets/svg/circle.svg");
+}
+
+/* .section-item a { */
+section a {
+  text-decoration: none;
+  color: #829985;
+}
+
+/* .section-item a:hover { */
+section a:hover {
+  color: #000000;
+  transition: 0.3s;
+}
+
+.contact-item:nth-child(1)::before {
+  content: '';
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: -3px;
+  height: 25px;
+  width: 25px;
+  background-image: url("assets/svg/telegram.svg");
+  background-size: cover;
+}
+
+.contact-item:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: -3px;
+  height: 22px;
+  width: 22px;
+  background-image: url("assets/svg/instagram.svg");
+  background-size: cover;
+}
+
+.contact-item:nth-child(3)::before {
+  content: '';
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: -3px;
+  height: 25px;
+  width: 25px;
+  background-image: url("assets/svg/email.svg");
+  background-size: cover;
+}
+
+.contact-item:nth-child(4)::before {
+  content: '';
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: -3px;
+  height: 25px;
+  width: 25px;
+  background-image: url("assets/svg/github.svg");
+  background-size: cover;
+}
+
+.contact-item:nth-child(5)::before {
+  content: '';
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: -3px;
+  height: 25px;
+  width: 25px;
+  background-image: url("assets/svg/discord.svg");
+  background-size: cover;
+}
+
+.contact-item:nth-child(6)::before {
+  content: '';
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: -3px;
+  height: 25px;
+  width: 25px;
+  background-image: url("assets/svg/location.svg");
+  background-size: cover;
+}
+
+.reasons-list {
+  list-style: circle;
+}
+
+.about {
+  line-height: 1.5;
+}
+
+footer {
+  display: block;
+  background-color: #829985;
+  height: 9rem;
+  width: 100%;
+  font-size: 1.8em;
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+}
+
+
+footer a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1rem;
+  bottom: -0.5rem;
+  left: 0;
+  background-color: #ffffff;
+  transition: transform 0.3s;
+}
+
+footer a:hover::after {
+  transform: scaleX(1);
+}
+
+footer img {
+  width: 10%;
+  height: auto;
+}
+
+.no-underline:hover::after {
+  transform: scaleX(0);
 }

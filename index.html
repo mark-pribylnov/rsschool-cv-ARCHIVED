@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MY CS</title>
+  <title>MY CV</title>
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <!-- Fonts -->
@@ -13,20 +13,102 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
     <nav>
       <ul class="nav-list">
-        <li><a class="nav-link nav-link-underline" href="">Contact</a></li>
-        <li><a class="nav-link nav-link-underline" href="">About me</a></li>
-        <li><a class="nav-link nav-link-underline" href="">Skills</a></li>
-        <li><a class="nav-link nav-link-underline" href="">Code sample</a></li>
-        <li><a class="nav-link nav-link-underline" href="">Work Experience</a></li>
-        <li><a class="nav-link nav-link-underline" href="">Education</a></li>
-        <li><a class="nav-link nav-link-underline" href="">English Level</a></li>
+        <li><a class="nav-link link-underline" href="">Contact</a></li>
+        <li><a class="nav-link link-underline" href="">About me</a></li>
+        <li><a class="nav-link link-underline" href="">Skills</a></li>
+        <li><a class="nav-link link-underline" href="">Code sample</a></li>
+        <li><a class="nav-link link-underline" href="">Work Experience</a></li>
+        <li><a class="nav-link link-underline" href="">Education</a></li>
+        <li><a class="nav-link link-underline" href="">English Level</a></li>
       </ul>
     </nav>
-  </header>
-  <main></main>
-  <footer></footer>
+  <main>
+    <section>
+      <img class="photo" src="test_image.png" alt="photo">
+    </section>
+    <section class="main-heading">
+      <h1 class="name">Main Heading</h1>
+      <p>Front-end Developer</p>
+    </section>
+    <hr>
+    <section class="contact normal-font border">
+      <h2 class="section-title">Contact</h2>
+      <ul>
+        <li class="section-item contact-item">Telegram: <a href="https://t.me/mark_pribylnov" target="_blank">@mark_pribylnov</a></li>
+        <li class="section-item contact-item">Instagram: <a href="https://instagram.com/mark_pribylnov" target="_blank">@mark_pribylnov</a></li>
+        <li class="section-item contact-item">Email: <a href="mailto:mark.pribylnov@gmail.com">mark.pribylnov@gmail.com</a></li>
+        <li class="section-item contact-item">Github: <a href="https://github.com/mark-pribylnov" target="_blank">mark-pribylnov</a></li>
+        <li class="section-item contact-item">Discord: Mark Pribylnov (@mark-pribylnov)</li>
+        <li class="section-item contact-item">Minsk, Belarus</li>
+      </ul>
+    </section>
+    <section class="about normal-font border">
+      <h2 class="section-title">About me</h2>
+      <p>I can describe my strengths with one word - persistence.
+        This quality allows you to gain other skills and succeed in anything. With time you adapt to any situation, become more efficient in problem solving, teamwork and so on. It's inevitable.
+
+        I worked as a salesman for one and a half years. Also tried working as a marketer.
+        Eventually, I decided to become a software engineer for a number of reasons:
+        <ul class="reasons-list">
+          <li> Opportunities to use English in real situations</li>
+          <li> Creating really useful apps, even for personal use</li>
+          <li> Remote work</li>
+          <li> Huge supportive community</li>
+          <li> It's a challenge. My previous job was outbound sales. One of the most stressful jobs. Requires constant self-education. I got 50 to 100 rejections every day and had to convert them into sales. So, if I worked there, I can become a software engineer as well.</li>
+        </ul></p>
+    </section>
+    <section class="skills normal-font border">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li class="section-item">HTML</li>
+        <li class="section-item">CSS</li>
+        <li class="section-item">JavaScript and Python (both on a basic level)</li>
+        <li class="section-item">Git</li>
+        <li class="section-item">VS code</li>
+        <li class="section-item">Linux</li>
+      </ul>
+    </section>
+    <section class="code normal-font border">
+      <h2 class="section-title">Code sample</h2>
+      <pre>
+        <code>
+   function sum (numbers) {
+     let total = 0;
+     for (let i = 0; i < numbers.length; i++) {
+         total += numbers[i];
+      };
+    return total;
+  };
+        </code>
+      </pre>
+    </section>
+    <section class="experience normal-font border">
+      <h2 class="section-title">Work Experience</h2>
+      <p>
+        First simple project - <a href="https://github.com/mark-pribylnov/Digital-clock" target="_blank">Digital clock</a> with Python and GUI framework Tkinter.
+      </p>
+    </section>
+    <section class="education normal-font border">
+      <h2 class="section-title">Education and Courses</h2>
+      <ul>
+        <li class="section-item"><a href="http://newmgek.unibel.by/" target="_blank">Minsk State Energy College</a></li>
+        <li class="section-item">Course on marketing</li>
+        <li class="section-item">Course <a href="https://www.py4e.com/" target="_blank">Python for Everybody</a></li>
+        <li class="section-item">FreeCodeCamp: Responsive Web Design, JavaScript</li>
+      </ul>
+    </section>
+    <section class="english normal-font">
+      <h2 class="section-title">English</h2>
+      <p>Intermediate. B1-B2. <br> I watch some movies without subtitles.<br>
+        On the Internet I use English only.</p>
+    </section>
+  </main>
+  <footer>
+    <time>2022</time>
+    <a href="https://github.com/mark-pribylnov" target="_blank">Mark Pribylnov</a>
+    <a class="no-underline" href="https://rs.school/js-stage0/" target="blank"><img src="assets/svg/logo.svg" alt="logo"></a>
+  </footer>
 </body>
 </html>
