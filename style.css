@@ -15,6 +15,38 @@ ul {
   list-style-type: none;
 }
 
+/* TEMPORARY STYLES */
+
+/* section {
+  border: 1px solid red;
+} */
+
+/* TEMPORARY STYLES */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  /* or grid-template-columns: 1fr 1fr */
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+  /* It says "span across 2 columns" and it doesn't matter where is the start of the end. BETTER don't use line number unless you really need it */
+   /* or */
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-col-span-2 {
+    grid-column: auto;
+  }
+}
+
 .border {
   border-bottom: 1px #000000 solid;
 }
