@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%; /* = 10px if default font size is = 16px. Now we can easily use relative units "rem" and "em".*/
+  font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -15,27 +15,23 @@ ul {
   list-style-type: none;
 }
 
-/* TEMPORARY STYLES */
+nav {
+  margin-bottom: 3rem;
+}
 
-/* section {
-  border: 1px solid red;
-} */
+section {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 
-/* TEMPORARY STYLES */
 .grid {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
-  /* or grid-template-columns: 1fr 1fr */
 }
 
 .grid-col-span-2 {
   grid-column: span 2;
-  /* It says "span across 2 columns" and it doesn't matter where is the start of the end. BETTER don't use line number unless you really need it */
-   /* or */
-  /* grid-column-start: 1;
-  grid-column-end: 3; */
-
 }
 
 @media (max-width: 768px) {
@@ -93,8 +89,11 @@ ul {
 
 .photo {
   display: block;
-  width: 20rem;
-  /* border-radius: 50%; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  vertical-align: middle;
+  border-radius: 50%;
 }
 
 .main-heading {
@@ -107,16 +106,16 @@ ul {
   font-weight: 300;
   letter-spacing: 1rem;
   margin-bottom: 6rem;
+  position: relative;
 }
 
 .name::after {
   content: '';
   position: absolute;
-  display: block;
-  margin-top: 3rem;
-  left: 42.5%;
-  width: 15%;
   height: 0.2rem;
+  top: 6.25rem;
+  left: 37.5%;
+  width: 25%;
   background-color: #829985;
 }
 
@@ -240,16 +239,18 @@ section a:hover {
 }
 
 .about {
+  display: block;
   line-height: 1.5;
 }
 
 footer {
-  display: block;
+  display: flex;
   background-color: #829985;
   height: 9rem;
   width: 100%;
   font-size: 1.8em;
   color: #ffffff;
+  justify-content: space-around;
 }
 
 footer a {
@@ -276,10 +277,17 @@ footer a:hover::after {
 }
 
 footer img {
-  width: 10%;
+  width: 30%;
   height: auto;
 }
 
 .no-underline:hover::after {
   transform: scaleX(0);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
 }
