@@ -25,9 +25,9 @@
       </ul>
     </nav>
   <main class="grid">
-    <section class="section-photo">
+    <div class="section-photo">
       <img class="photo" src="test_image.png" alt="photo">
-    </section>
+    </div>
     <section class="main-heading">
       <h1 class="name">Main Heading</h1>
       <p>Front-end Developer</p>
@@ -46,7 +46,7 @@
           <li> Remote work</li>
           <li> Huge supportive community</li>
           <li> It's a challenge. My previous job was outbound sales. One of the most stressful jobs. Requires constant self-education. I got 50 to 100 rejections every day and had to convert them into sales. So, if I worked there, I can become a software engineer as well.</li>
-        </ul></p>
+        </ul>
     </section>
     <section class="contact normal-font border">
       <h2 class="section-title">Contact</h2>
@@ -76,7 +76,7 @@
         <code>
    function sum (numbers) {
      let total = 0;
-     for (let i = 0; i < numbers.length; i++) {
+     for (let i = 0; i &lt; numbers.length; i++) {
          total += numbers[i];
       };
     return total;
